@@ -1,0 +1,37 @@
+.main-headline {
+    color: darkgreen;
+}
+.sub-headline, .main-headline {
+    text-align: center;
+    font-family: Georgia;
+}
+#div3, #div4, #div7 {
+    line-height: 25px;
+}
+#div7 {
+    text-transform: uppercase;
+}
+.div8 {
+    line-height: 50px    
+}
+a {
+    text-decoration: none;
+}
+.txt:hover {
+    text-decoration: underline;
+}
+img {
+    float: left;
+    border: 1px solid black;
+}
+div {
+    border-block-style: solid;
+}
+img {
+    margin-right: 25px;
+    width: 210px;
+    height: 210px;
+}
+#div2 {
+    line-height: 25px;
+}

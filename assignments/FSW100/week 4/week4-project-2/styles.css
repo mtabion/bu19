@@ -1,0 +1,144 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+header {
+    margin: 0;
+    background: #222;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    background: #55d6aa;
+}
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+nav {
+    float: left;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li {
+    display: inline-block;
+    margin-left: 150px;
+    padding-top: 20px;
+}
+a {
+    color: white,
+    text-decoration: none;
+    text-transform: uppercase;
+}
+body {
+    background-image: url("http://superjazz.world/wp-content/uploads/2019/06/CBD-oil-HempWorx-Welcome.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.box1 {
+    position: absolute;
+    left: 0; bottom: 70; top: 20;  right: 0;
+    margin: auto;
+    text-align: center;
+    height: 80px;
+    color: blue;
+    font-size: 85px;
+    height: 90px;
+    width: 50%;
+    font-weight: bold;
+    font-style: oblique;
+    border: 5px;
+}
+.bizname {
+  
+    width: 50%;
+    height: 80px;
+    margin: auto;
+    text-align: center;
+    font-size: 85px;
+    color: blue;
+}
+.cart {
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin: auto;
+    padding: 5px;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#center {
+    width: 500px;
+    margin: 0 auto;
+    color:white;
+}
+ul a:hover{
+    display: block;
+    background: white;
+} 
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.box2 {
+    padding: 0px;
+    border: 0px solid white;
+    height: 300px;
+}
+.box3 {
+    background-color: #55d68b;
+    border: 2px solid white;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 230px;
+    color: rgb(255, 136, 0);
+    line-height: 25px;
+    float: left;
+    font-size: 25px;
+}
+.wrapper {
+    position: absolute;
+    left: 0; bottom: 70%; top: 30%;  right: 0;
+    margin: 0;
+    text-align: left;
+}
+.add2 {
+    background-color:#55d68b;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 18px;
+    border: 5px solid white;
+    height: 100px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: red
+    
+}
+.wrapper2 {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    left: 0; bottom: 20%; top: 80%; right: 0;
+    margin: 10px;
+}
+
+
