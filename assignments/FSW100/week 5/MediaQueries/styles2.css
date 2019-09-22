@@ -1,0 +1,126 @@
+#grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
+}
+.box1 {
+    border-radius: 10px;
+    background-color: aqua;
+    grid-column: 1 / 4;
+    font-size: 80px;
+    text-align: center;
+    display: inline-block;
+}
+.box2 {
+    background-color: pink;
+    grid-column: 1 / 2;
+    max-width: 200px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.box3 {
+    background-color: red;
+    grid-column: 2 / 3;
+    border-radius: 10px;
+    padding: 5px;
+}
+.box4 {
+    background-color: purple;
+    grid-column: 3 / 4;
+    max-width: 200px; 
+    border-radius: 10px;
+    padding: 5px;
+}
+.button {
+    background-color: darkgreen;
+    grid-column: 1 / 4;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+}
+@media (max-width: 700px) {
+    #grid-container {
+        display: grid;
+        grid-gap: 20px;
+        
+    }
+    .box1 {
+        border-radius: 10px;        
+        background-color: aqua;
+        font-size: 40px;
+        text-align: center;
+        height: flex;      
+        grid-column: 1 / span 4;
+    }
+    .box2 {
+        background-color: pink;
+        border-radius: 10px;
+        Height: flex; 
+        max-width: 100%;      
+        grid-column: 1 / span 4;
+    }
+    .box3 {
+        background-color: red;
+        border-radius: 10px;
+        Height: flex;       
+        grid-column: 1 / span 4;
+    }
+    .box4 {
+        background-color: purple; 
+        border-radius: 10px;
+        Height: flex;
+        max-width: 100%;
+        grid-column: 1 / span 4
+    }
+    .button {
+        background-color: darkgreen;
+        grid-column: 1 / span 4;
+    }
+}
+@media (min-width: 650px) and (max-width:1200px) {
+    #grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr, 1fr;
+    }
+    .box1 {
+        border-radius: 10px;
+        background-color: aqua;
+        font-size: 50px;
+        text-align: center;
+        display: inline-block;
+        grid-column: 1 / span 3;    
+    }
+    .box2 {
+        background-color: pink;
+        grid-column: 1 / 2;
+        max-width: 200px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .box3 {
+        background-color: red;
+        grid-column: 2 / 3;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .box4 {
+        background-color: purple; 
+        border-radius: 10px;
+        Height: flex;
+        max-width: 100%;
+        grid-column: 1 / span 3;
+        color: white;
+    }
+    .button.button {
+        background-color: darkgreen;
+        grid-column: 1 / span 3;
+    }
+}
