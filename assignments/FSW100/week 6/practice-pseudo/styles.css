@@ -1,0 +1,96 @@
+.wrapper {
+    background-color: gray;
+    margin: 10px;
+    display: grid;
+    grid-row-gap: 10px;
+}
+.box1 {
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: background-color 2s ease-out, width .5s ease-in;
+    height: 60px;
+    width: 200px;
+}  
+.box1:hover {
+    background-color: darkgreen;
+    width: 400px;
+}
+.box2 { 
+    background-color: blueviolet;
+    transition: background-color 1s ease-in-out;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 60px;
+    width: 400px;
+}
+.box2:hover {
+    background-color: rgb(251, 255, 0);
+}
+.box3 {
+    background-color: red;
+    border: 2px solid black;
+    transition: margin-left 2s ease-in, width 1s ease-out;
+    border-radius: 20px;
+    height: 60px;
+    width: 400px;
+}
+.box3:hover {
+    background-color: blue;
+    width: 200px;
+}
+.box4 {
+    
+    margin: 10px;    
+    height: 60px;
+    width: 400px;
+}
+.box4:hover {
+    transition: background-color 2s ease-in-out 2s;
+    display: block;
+}
+.box4:hover #tada {
+    background-color: yellow;
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid black;
+}
+.box5 {
+    background-color: darkolivegreen;
+    border: 2px solid black;
+    transition: background-color 2s ease-in-out;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    height: 50px;
+    width: 400px;
+}
+.box5 a:link {
+    text-decoration: none;
+}
+.box5:hover {
+    background-color: pink;
+}
+.box5:hover a {
+    font-size: 50px;
+    color: red;
+}
+.box6 {
+    transition: background-color 1s ease-in-out;
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 60px;
+    width: 400px;
+}
+.box6:hover {
+background-color: orangered;
+}
+.box6:hover > p:nth-child(2n) {
+    color: white;
+    transition-delay: 1s;
+}
