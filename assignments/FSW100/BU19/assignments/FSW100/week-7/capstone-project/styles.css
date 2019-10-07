@@ -1,0 +1,269 @@
+html, body {
+    background-image: url("https://i44.photobucket.com/albums/f44/mtabion/img%20cannabis%20png_zpsefa7nmqf.png");
+    background-repeat:no-repeat;
+    background-size:cover;}
+.container {
+    width: 100%;
+    background-color: #4CAF50;
+    border-radius: 15px;}
+.nav {
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  justify-content: space-evenly;    
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px;
+  font-size: 20px;
+  height: 100px;
+    }
+.nav a:hover {color: red;}
+.nav a {color: white;}
+.feature {
+  font-size: 18px;
+  color: goldenrod;
+  margin-top: 0;
+  margin-left: 14%;}
+.block2 > p {
+  margin-top: 15%;
+  text-align: center;
+  color: rgb(255, 102, 0);
+  font-size: 25px;}
+.block2, .feature, li {width: 100%;}
+.block3 > p {width: 100%;}
+#home, #products, #contacts, #blog {margin-top:30px;}
+#cbd {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    grid-auto-rows: (auto, 1fr);
+    grid-gap: 1px;
+    padding: 1px;    
+    min-height: 400px;}
+  .block3 {      
+    margin-top: 15%;
+    text-align: center;
+    font-size: 50px;
+    color: goldenrod;
+    width: 1000px;}
+  .block4 > img {
+    margin-top: 40px;
+    width: 350px;
+    height: 250px;}
+  #what a, #opportunity a {color: white;}
+  #what:hover, #opportunity:hover {
+    transition-duration: 1s;
+    cursor: pointer;
+    color: black;
+    background-color: #4CAF50;}
+  .c-and-b {
+    margin-top: 0;
+    text-align: center;
+    font-size: 90px;
+    color: rgb(255, 102, 0);
+    font-weight: bolder;}
+  .block6 > button {
+    margin-left: 8%;
+    border-radius: 20px;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    height: 50px;
+    width: 400px;}
+  #take {
+      margin: 5px;
+      padding: 5px;
+      text-align: center;
+      margin-right: 17%;
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(255, 102, 0);}
+  #here {
+      color: white;
+      margin-left: 6%;      
+      font-weight: bold;}
+  .bullet {color: white;}
+  .footer {
+      margin:5px;
+      padding: 5px;
+      margin-top: 20px;
+      margin-left: 0%;
+      color: white;
+      width: 100%;
+      height: 120px;}
+  .footer > div {
+    margin:5px;
+    padding: 5px;}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav {
+    font-size: 15px;
+    height: 75px;
+    width: 100%;}
+#cbd {
+    margin-top: 0;
+    text-align: center;
+    font-size: 26px;}
+#cbd > img {
+    height: 20px;
+    width: 150px;}
+.block2 {
+    background-size: contain;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    height: 200px;
+    width: 500px;
+    margin-top: 10px;
+    margin-right: 2%;}
+.block2 > p {
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 10px;
+    font-size: 26px;}
+.feature {margin-left:0;}
+.feature > li {
+    color: white;
+    font-size: 16px;
+    margin-top: 2px;}
+.block3 {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 46px;
+    width: 100%;
+    height: 100px;}
+.para {margin-left: 5%;}
+.block3 > p {margin-top: 10px;}
+.block4 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin-top: 10px;
+    margin-left: 0%;
+    justify-content: center;}
+.block5 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    margin-top: 10px;
+    margin-left: 0%;}
+.block5 > img {margin-left: 5%;}
+.block6 {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    margin-top: 10px;    
+    width: 100%;}
+.c-and-b {
+    font-size: 56px;
+    text-align: left;
+    margin-left: 5px;}
+#shop { margin-left: 0%}
+.block6 > button {width: 300px;}
+.block7 {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    margin-top: 10px;
+    margin-left: 0%;
+    font-size: 16px;
+    width: 400px;}
+.footer {
+    margin:10px;
+    margin-top: 5px;
+    height: 150px;}
+.footer > div {
+    font-size: 12px;
+    margin:0px;}
+}
+  @media (max-width: 768px) {
+  .nav {
+    padding: 5px;
+    font-size: 11px;
+    height: 50px;}
+  #cbd {
+    margin-top: 0;
+    text-align: center;
+    font-size: 26px;
+    color: rgb(255, 102, 0);
+    font-weight: bolder;}
+  #cbd > img {
+    height: 20px;
+    width: 150px;}
+  .cart {
+    margin-top: 5%;
+    border-radius: 10px;
+    height: 20px;
+    width: 35px;}
+  .block2 {
+    background-size: contain;
+    grid-column: 1 / 4;
+    height: 200px;
+    width: 555px;
+    margin-top: 10px;
+    margin-right: 2%;}
+  .block2 > p {
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 10px;
+    font-size: 26px;}
+  .feature {margin-left:0;}
+  .feature > li {
+    font-size: 12px;
+    margin-top: 2px;}
+  .block3 {
+    grid-column: 1 / 4;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: goldenrod;
+    width: 555px;
+    height: 80px;}
+  .block3 > p {
+    float: left;
+    margin-top: 20px;}
+  .para {
+    text-align: left;
+    margin-left: 10px;}
+  .block4 {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+    justify-content: center;}
+  .block5 {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+    justify-content: center;}
+  .block6 {
+    grid-column: 1 / -1;
+    height: 100px;
+    margin-top: 10px;
+    padding: 0px;
+    justify-content: center;
+    height: 150px;
+    width: 555px;}
+  .c-and-b {
+    font-size: 46px;
+    margin-top: 0%;
+    text-align: left;}
+  #shop { margin-left: 0%}
+  .block6 > button {
+    text-align: center;
+    height: 30px;
+    width: 200px;}
+  .bullet > li {text-align-last: left;}
+  .block7 {
+    margin-top: 10px;
+    margin-left: 0%;
+    list-style-position: outside;
+    font-size: 12px;
+    width: 450px;}
+  .footer {
+    margin:10px;
+    padding: 10px;
+    margin-top: 5px;
+    height: 250px;}
+  .footer > div {
+    font-size: 12px;
+    margin:0px;}
+}
