@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(https://i44.photobucket.com/albums/f44/mtabion/566280_zpsvpy6bkey.jpg) no-repeat;
+    background-size: cover;}
+.box {  
+    font-size: 16px;
+    text-align: center; 
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 2%;  
+    color: black;
+    font-family: "century gothic", sans-serif;}
+.box-img {
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #fff;
+    width: 250px;
+    height: 250px;}
+h1 { text-shadow: 2px 2px 4px #000000;
+    color: white;}
+.full-stack {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    margin: 0 auto;
+    padding-top: 1%;
+    width: 400px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 10px;}
+.para {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    text-align: left;
+    padding:10px;
+    color: white;}
+@media screen and (max-width: 1024px) {
+.box {  
+    font-size: 14px; 
+    width: 800px;}
+.box-img {
+    width: 200px;
+    height: 200px;}
+.full-stack {
+    width: 250px;
+    height: 25px;
+    font-size: 14px;}
+.para {font-size: 12px;}
+}
+@media screen and (max-width: 800px) {
+.box {  
+    font-size: 12px; 
+    width: 600px;}
+.box-img {
+    width: 150px;
+    height: 150px;}
+.full-stack {
+    width: 200px auto;
+    height: 40px;
+    font-size: 12px;}
+.para {font-size: 11px;}
+}
+@media (max-width: 600px) {
+.box {  
+    font-size: 12px; 
+    width: 300px;}
+.box-img {
+    width: 150px;
+    height: 150px;}
+.full-stack {
+        width: 200px;
+        height: 40px;
+        font-size: 12px;}
+.para {
+    margin-left: 10%;
+        font-size: 11px;
+        width: 250px;}        
+}

@@ -1,0 +1,17 @@
+.header {
+    color: blue;
+    text-align: center;
+}
+.year {
+    text-align: center;
+}
+.cvo {
+    color: darkred
+}
+#my-table {
+    border: 1px solid black;
+}
+img {
+    max-width: 60px;
+    height: auto;
+}
