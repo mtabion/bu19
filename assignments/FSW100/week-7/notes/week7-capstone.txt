@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CBD4Life Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="credit">
+        <h1 id="h1">CREDIT CARDS ACCEPTED. FREE SHIPPING ON ORDERS OVER $100</h1>
+    </header>
+    <nav>
+        <ul class="nav">
+            <li id="cbd"><img src="https://i44.photobucket.com/albums/f44/mtabion/hempworx-logo_zpsczquhxgk.png">
+                <p id="life">CBD4Life</p>
+            </li>
+            <li id="about"><a href="#">Home</a></li>
+            <li id="products"><a href="#">products</a></li>
+            <li id="contacts"><a href="#">contact</a></li>
+            <li id="blog"><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="grid-layout">
+            <div class="grid1">1</div>
+            <div class="grid2">
+                <p id="what"><a href="#">WHAT IS CBD</a></p>
+                <p id="opp"><a href="#">OPPORTUNITY</a></p>
+                <p id="pro"><a href="#">PRODUCTS</a></p>
+
+            </div>
+            <div class="grid3">
+                <img src="https://www.hempworx.com/images/hw2019/valuePackHempWorx-4.png" alt="oils" width="400" height="400">
+            </div>
+            <div class="grid4">
+                <h2 id="h2">Third Party Testing and Documentation</h2>
+                <p id="para">We believe in 100% transparency with our customers and affiliates. Every batch of product
+                    we produce
+                    gets sent out for Third Party Testing before we pick, pack, and ship product to the end user. This
+                    is the MyDailyChoice and HempWorx commitment to you. A product you can count on each and every time.
+                </p>
+                <h3 id="h3">THE HEMPWORX DIFFERENCE</h3>
+                <p id="hempworx">HempWorx products are made from industrial hemp plants grown on American farms.
+                    Cannabidiol (CBD) is
+                    just one of over 85 cannabinoids that are identified in the (hemp) cannabis plant. Our oil is CO2
+                    extracted resulting in a solvent free, pure and potent formula. HempWorx uses minimal ingredients
+                    and implements third party testing on each batch to ensure superior quality control.</p>
+            </div>
+            <div class="grid5">
+                <img src="https://www.hempworx.com/images/hw2019/valuePackHempWorx-12.png" alt="value" width="400"  height="400">
+            </div>
+            <div class="grid6">
+                <img src="https://i44.photobucket.com/albums/f44/mtabion/US-Hemp-Authority-Logo-e1543529483445-300x300_zpsaf6pmmu0.png" alt="hemp-seal" width="400" width="400">
+            </div>
+            
+        </div>
+
+    </main>
+    <aside class="flexbox">
+        <div class="flex-container">
+            <div id="flex1">
+                <img src="https://atascaderomassage.com/wp-content/uploads/2018/02/3-of-4-hemp.jpg" alt="fullspec" width="600" height="400">
+            </div>
+            <div id="flex2">
+                <img src="https://i44.photobucket.com/albums/f44/mtabion/oil%20drop_zpsgmhlcefw.jpg" alt="oil" height="400" width="600">
+            </div>
+        </div> 
+        <div class="flex-container2">   
+            <div id="flex3">
+                <img src="https://sandnstones.files.wordpress.com/2018/04/hw-relief-2.jpg" alt="relief" width="600" height="400">
+            </div>  
+            <div id="flex4">
+                <img src="https://i.ytimg.com/vi/RFBmgwpKsGU/hqdefault.jpg" height="400" width="600">
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="footer">
+            <p id="copy">Copyright 2019 HempWorx All Rights Reserved.</p>
+                <p id="fda">FDA Disclaimer</p>
+                <p id="statement"> These statements have not been evaluated by the Food and Drug Administration. These products are not
+                        intended to diagnose, treat, cure or prevent any disease. HempWorx, Inc. assumes no responsibility
+                        for the improper use of and self-diagnosis and/or treatment using these products. Our products
+                        should not be confused with prescription medicine and they should not be used as a substitute for
+                        medically supervised therapy. If you suspect you suffer from clinical deficiencies, consult a
+                        licensed, qualified medical doctor. You must be at least 18 years old to visit our website and make
+                        product purchases. We do not make any health claims about our products at HempWorx. Before taking
+                        our products, it’s wise to check with your physician or medical doctor. It is especially important
+                        for people who are: pregnant, chronically ill, elderly, under 18, taking prescription or over the
+                        counter medicines. None of the information on our website is intended to be an enticement to
+                        purchase and may not be construed as medical advice or instruction. The use of any of our products
+                        for any reason, other than to increase general health & wellness, is neither, implied nor advocated
+                        by HempWorx, Inc.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!------------------------------------------------------------------------CSS---------------------------------------------------------------------->
+body {
+    margin-top: 0%;
+    background-color: darkgreen;
+}
+.credit > #h1 {
+    margin-top: 0%;
+    background-color: black;
+    color:white;
+    text-align: center;
+    height: 50px;
+    font-size: 40px;
+}
+.nav {
+    margin-top: 0%;
+    display: flex;
+    text-align: center;
+    color: gold;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-transform: uppercase;
+    margin-left: 2px;
+    padding: 5px;
+    font-size: 20px;
+    height: 50px;
+}
+#life {
+    display: inline-block;
+    font-size: 25px;
+}
+.flexcontainer { 
+    display: flex; 
+    border: 1px solid black;
+}
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr)
+}
+.grid1 {
+    background-image: url("https://i44.photobucket.com/albums/f44/mtabion/img%20cannabis%20png_zpsefa7nmqf.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    grid-column: 1 / span 7;
+    height: 700px;
+    font-size:0;
+}
+.grid2 {
+    border-radius: 15px;
+    background-color: limegreen;
+    position: absolute;
+    padding: 10px;
+    left: 35%;
+    top: 400px;   
+}
+#what {
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 12px;
+}
+/*#what > a {color: white;}*/
+#opp {
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    margin-right: 12px;
+}
+#pro {
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+}
+.grid3 {
+    /*border: 1px solid black;*/
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;  
+    height: 350px;
+}
+.grid3 > img {
+    margin-left: 100px;
+}
+.grid4 {
+    background-color: black;
+    /*border: 1px solid black;*/
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+    /*background-color:lightgreen;*/
+    height: 350px;
+}
+#h2, #h3 {
+    text-align: center;
+    color: white;
+}
+#para {
+    color: white;
+    padding: 5px;
+}
+#hempworx {
+    color: white;
+    padding: 5px;
+}
+.grid5 {
+    /*border: 1px solid black;*/
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+    height: 350px;
+}
+.grid5 > img {margin-left: 100px;}
+.footer {
+    grid-column: 1 / span 7;
+    grid-row: 3 / 4;
+    background-color: white;
+    height: 190px;;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#copy{
+    font-size: 16px;
+    text-align: center;
+}
+#fda {text-align: center;}
+.grid6 {
+    position: absolute;
+    top: 200px;
+}
+.flex-container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+        
+}
+.flex-container > div {  
+    border-radius: 10px;
+    background-color: rgb(50, 205, 102);
+    font-size: 30px; 
+    height: 400px;
+    width: 600px; 
+} 
+.flex-container2 {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+} 
+.flex-container2 > div {
+    background-color: rgb(50, 205, 102);
+    height: 400px;
+    width: 600px;
+    font-size: 30px;
+}
+#flex1, #flex3 {
+    margin-right: 15px;
+}
+#flex3, #flex4 {
+    margin-top: 15px;
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+.credit > #h1 {height: 60px;}
+#h1 {
+        line-height:250%;
+        font-size: 25px;
+}
+.grid1 {height: 500px;}
+.grid2 {top: 300px;}
+.grid3 {height: 300px;}
+.grid3 > img {
+    margin-left: 2px;
+    margin-top: 100px;
+    height: 300px;
+    width: 300px; 
+}
+.grid4 {height: 500px;}
+#h2, #h3 {font-size: 20px;}
+#para, #hempworx {font-size: 16px;}
+.grid5 > img {
+    margin-left: 2px;
+    margin-top: 100px;
+    height: 350px;
+    width: 350px; 
+}
+.grid6 > img {
+    height: 300px;
+    width: 300px;
+}
+#flex1, #flex2, #flex3, #flex4 {height: 350px;}
+#flex1 > img {margin-left: 20px;}
+#flex2 > img {
+    margin-right: 50px;
+    height: 400px;
+    width: 460px;
+}
+#flex3 {
+    margin-right: 50px;
+    height: 400px;
+    width: 460px;
+}
+#flex4 {
+    margin-right: 70px;
+}
+#flex4 > img {
+    width: 600px;
+}
+.footer {
+    margin-top: 0px;
+    height: 280px;
+    padding-top: 10px;
+}
+#copy{
+    font-size: 16px;
+    text-align: center;
+}
+  
+
+
+}

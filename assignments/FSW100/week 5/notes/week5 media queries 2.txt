@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Media Queries</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body class="wrapper">
+    <div id="grid-container">
+        <header class="box1">Practicing CSS Media Queries</header>
+        <sidebar class="box2">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem</sidebar>
+        <main class="box3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Neque aliquam vestibulum morbi blandit cursus. Risus sed vulputate odio ut
+            enim blandit volutpat maecenas volutpat. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Sed
+            viverra ipsum nunc aliquet. Non sodales neque sodales ut. A condimentum vitae sapien pellentesque habitant
+            morbi. Laoreet id donec ultrices tincidunt arcu. Id porta nibh venenatis cras sed felis eget velit. Cursus
+            sit amet dictum sit amet justo donec enim diam. Nunc sed velit dignissim sodales ut eu sem integer vitae.
+            Dui ut ornare lectus sit amet. Hac habitasse platea dictumst quisque. Neque egestas congue quisque egestas
+            diam in arcu cursus.</main>
+        <aside class="box4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.</aside>
+        <footer class="button">
+            <a href="#" class="button">Link Button</a>
+
+        </footer>
+    </div>
+</body>
+
+</html>
+
+<!------------------CSS---------------->
+
+#grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
+}
+.box1 {
+    border-radius: 10px;
+    background-color: aqua;
+    grid-column: 1 / 4;
+    font-size: 80px;
+    text-align: center;
+    display: inline-block;
+}
+.box2 {
+    background-color: pink;
+    grid-column: 1 / 2;
+    max-width: 200px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.box3 {
+    background-color: red;
+    grid-column: 2 / 3;
+    border-radius: 10px;
+    padding: 5px;
+}
+.box4 {
+    background-color: purple;
+    grid-column: 3 / 4;
+    max-width: 200px; 
+    border-radius: 10px;
+    padding: 5px;
+}
+.button {
+    background-color: darkgreen;
+    grid-column: 1 / 4;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+}
+@media (max-width: 700px) {
+    #grid-container {
+        display: grid;
+        grid-gap: 20px;
+        
+    }
+    .box1 {
+        border-radius: 10px;        
+        background-color: aqua;
+        font-size: 40px;
+        text-align: center;
+        height: flex;      
+        grid-column: 1 / span 4;
+    }
+    .box2 {
+        background-color: pink;
+        border-radius: 10px;
+        Height: flex; 
+        max-width: 100%;      
+        grid-column: 1 / span 4;
+    }
+    .box3 {
+        background-color: red;
+        border-radius: 10px;
+        Height: flex;       
+        grid-column: 1 / span 4;
+    }
+    .box4 {
+        background-color: purple; 
+        border-radius: 10px;
+        Height: flex;
+        max-width: 100%;
+        grid-column: 1 / span 4
+    }
+    .button {
+        background-color: darkgreen;
+        grid-column: 1 / span 4;
+    }
+}
+
+

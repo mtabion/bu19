@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>Week 2 HTML5</title>
+       <title>Create HTML Webpage</title>
     </head>
     <body>
         <div>
