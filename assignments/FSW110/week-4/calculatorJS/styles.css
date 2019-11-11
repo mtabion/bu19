@@ -1,0 +1,19 @@
+body{
+background-color: aquamarine;
+}
+#addNum{
+    color: red;
+}
+#subNum{
+    color: yellowgreen;
+}
+#mulNum{
+    color: blueviolet;
+}
+input{
+    width: 50px;
+    font-size: 16px;
+}
+.operation{
+    margin-bottom: 20px;
+}
