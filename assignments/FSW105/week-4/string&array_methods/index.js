@@ -27,8 +27,15 @@ console.log(firstHalf2)
 //Make a function that takes a string and returns that string where the first half is capitalized, 
 //and the second half is lower cased. (If the string length is odd, capitalize the shorter of the first half.)
 var capilizeAndLowerCase = "Hello" // => "HEllo"
+console.log(capsFirstHalf(capilizeAndLowerCase))
 
 //Make a function that takes a string and returns that string where the first half is capitalized, 
 //and the second half is lower cased. (If the string length is odd, capitalize the shorter of the first half.)
 var capilizeAndLowerCase = "Hello World" // => "HELLO world"
 
+function capsFirstHalf(string) {
+    var halfLength = string.length/2
+    var lengthToCap = ( halfLength %2===1 ? halfLength : Math.trunc(halfLength))
+        return string.substr(0,lengthToCap).toUpperCase() + string.slice(lengthToCap);
+}
+console.log(lengthToCap)

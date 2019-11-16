@@ -1,39 +1,47 @@
-var element = document.getElementById("h1") 
-var header = document.createTextNode("My Online DJ Business");
-element.appendChild(header);
+const element = document.getElementById("dj") 
+let header = document.createTextNode("My Online DJ Business");
+element.appendChild(header); 
 
-var hoverOver = document.getElementById("hover");
-var mouseOverFunction = function() {
-  this.style.color = "blue";
+//Blue when the mouse hovers over the square
+const mouseHover = () => {
+    square.style.backgroundColor = 'blue';
 }
-hoverOver.onmouseover = mouseOverFunction;
+square.addEventListener('mouseover', mouseHover);
 
-var holdMeDown = document.getElementById("hold")
-var mouseDown = function() {
-  this.style.color = "red";
+//Red when the mouse button is held down over the square
+const holdMeDown = () => {
+    square.style.backgroundColor = 'red';
 }
-holdMeDown.onmousedown = mouseDown;
-  
-var letMeGo = document.getElementById("hold")
-var mouseUp = function() {
-  this.style.color = "yellow";
+square.addEventListener('mousedown', holdMeDown);
+
+//Yellow when the mouse button is let go over the square
+const letMeGo = () => {
+    square.style.backgroundColor = 'yellow';
 }
-letMeGo.onmouseup = mouseUp;
+square.addEventListener('mouseup', letMeGo);
 
-var doubleClick = document.getElementById("doubleClick")
-var dblclick = function() {
-  this.style.color = "green";
+//Green when the mouse is double clicked in the square
+const clickMeTwice = () => {
+    square.style.backgroundColor = 'green';
 }
-doubleClick.ondblclick = dblclick;
+square.addEventListener('dblclick', clickMeTwice);
 
-document.getElementById("all").onscroll = function() {myFunction()};
-var scrollArnd = document.getElementById("scroll")
-var scrolled = function() {
-  this.style.color = "orange";
+//Orange when the mouse scroll is used somewhere in the window
+const scrollArnd = () => {
+    square.style.backgroundColor = 'orange';
 }
-scrollArnd.onscroll = scrolled;
+square.addEventListener('wheel', scrollArnd);
 
+// const scrollArnd = () => {
+//     document.body.style.backgroundColor = 'orange';
+// }
+// document.body.addEventListener('wheel', scrollArnd);
 
-document.addEventListener("keydown", function(event) {
-  console.log(event.which);
-})
+//You should also be able to press the first letter of the colors (typing "r" on the keyboard for "red", for example)
+const pressKey = (event) => {
+    if(event.which == 66) {
+    console.log('pressed')
+square.style.backgroundColor = "blue";
+}
+}
+document.addEventListener('keydown', pressKey);

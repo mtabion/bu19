@@ -1,0 +1,10 @@
+div {
+    width: 320px;
+    height: 320px;
+    border: 1px solid rgba(0, 0, 0, .2);
+  }
+  
+  #square {
+    background: #bec3c5;
+  }
+  
