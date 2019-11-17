@@ -1,8 +1,9 @@
-function logSubmit(event) {
-    log.textContent = `Form Submitted! Time stamp: ${event.timeStamp}`;
-    event.preventDefault();
-  }
-  
-  const form = document.getElementById('form');
-  const log = document.getElementById('log');
-  form.addEventListener('submit', logSubmit);
+function validate() {
+  const input_text = document.getElementById("firstname");
+  if(input_text.value == "") {
+      alert("Please enter your first name.");
+      return false;
+}
+  alert("Submitting form, thank you!");
+  return true;
+}  
