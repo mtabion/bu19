@@ -1,0 +1,24 @@
+body {
+  background-image: url("https://i44.photobucket.com/albums/f44/mtabion/best-cheap-online-grocery-stores-1068x713_zpswkdt3jum.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(162, 0, 255)
+}
+input {
+  align-content: center;
+  color: red;
+}
+@media (min-height: 500px) {
+  section {
+    column-width: 15em;
+  }
+}
+
+
+
+
+

@@ -1,10 +1,10 @@
-var Enemies=["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
+var enemies=["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
 
-//funtion corrected: function was miss a c
-function Who_Wins(is_there_kryptonite,enemy_name)
+//funtion corrected: function was miss a c, camelCasing
+function whoWins(isThereKryptonite,enemyName)
  
 {
-if (!is-there-kryptonite)
+if (!isThereKryptonite)
 {
     return "Superman beats " +enemyName+ ", of course";
 }
@@ -16,15 +16,15 @@ else{
 
 for (var i=0;i<enemies.length;i++)
 {
-    var is_there_kryptonite;
-               //kryptonite: corrected: colon cannot be used as an end-of-line
+    var isThereKryptonite;
+               //kryptonite: corrected: colon cannot be used as an end-of-line also camelCasing
 
     if (i%2=== 0) {
-        is_there_kryptonite = true;
+        iisThereKryptonite = true;
     } else {
-        is_there_kryptonite = false;
+        isThereKryptonite = false;
     }
-    console.log(Who_Wins(is_there_kryptonite,enemies[i]));
+    console.log(whoWins(isThereKryptonite,enemies[i])); //whoWins
 }
 
 function HowAttractedIsLoisLaneToMe ()
@@ -39,7 +39,7 @@ console.log( HowAttractedIsLoisLaneToMe ()) ;
 
 var clarkKent =true;
 var superman =false;
-   //superman false; note: Added = after superman
+   //superman false; note: Added = after superman, camelCase clarkKent
 
 while (clarkKent){
     console.log("I'm just a nerdy columnist");

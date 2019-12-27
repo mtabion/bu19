@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        
+    <div id="welcome">Please Enter Your Information:</div> 
+
+
+    <form name="customer">
+            <input type="text" value="First Name" name="firstName" placeholder="First Name" required/>
+            <input type="text" value="Last Name" name="lastName" placeholder="Last Name" required/>
+            <input type="number" value="" name="age" placeholder="Age" required/>
+
+            Female: <input type="radio" name="gender" value="Female"/>
+            Male: <input type="radio" name="gender" value="Male"/>
+
+            Select Destination:
+            <select name="place">
+                <option value="Hawaii">Kauai, Hawaii</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Caribbean">Guadeloupe, Caribbean</option>
+            </select>
+            
+            Select Your Diet:
+            Vegitarian <input type="checkbox" value="Vegitarian" name="diet"/>
+            Lactose <input type="checkbox" value="Lactose" name="diet"/>
+            Organic <input type="checkbox" value="Organic" name="diet"/>
+    
+            <button id="submit">Submit</button>
+        </form>
+
+    <script src="index.js"></script>
+</body>
+</html>

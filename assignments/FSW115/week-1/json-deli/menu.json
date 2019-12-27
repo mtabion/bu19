@@ -1,0 +1,169 @@
+{
+  "appetizers": [
+    {
+      "name": "Smoke Salmon Bites",
+      "ingredients": ["smoked salmon slices", "bTable butter", "tortillas"],
+      "description": "These Smoked Salmon Appetizers are fantastic! "
+    },
+    {
+      "name": "Prociutto Aspargus Puffs",
+      "ingredients": [
+        "asparagus ",
+        "prosciutto",
+        "Gruyere",
+        "extra virgin olive oil",
+        "egg",
+        "salt",
+        "pepper"
+      ],
+      "description": "These  Prosciutto Asparagus Puff Pastry Bundles are an easy and elegant appetizer or brunch idea! "
+    },
+    {
+      "name": "Cream Cheese Crescent",
+      "ingredients": [
+        "pillsbury crescent rolls",
+        "cream cheese",
+        "sugar",
+        "butter",
+        "vanilla"
+      ],
+      "description": "Cream cheese squares. Very easy to eat, and very good."
+    }
+  ],
+  "cold sandwiches": [
+    {
+      "name": "Mint Cucumber Tomatoe Sandwich",
+      "ingredients": [
+        "cucumber",
+        "tomatoes",
+        "mint leaves",
+        "sourdough bread",
+        "butter"
+      ],
+      "description": "Absolute go-to sandwich"
+    },
+    {
+      "name": "Cobb Salad Sub",
+      "ingredients": [
+        "Italian bread",
+        "balsamic vinaigrette",
+        "baby spinach",
+        "deli ham",
+        "eggs",
+        "bacon strips",
+        "cherry tomatoes"
+      ],
+      "description": "A sandwich masterpiece"
+    },
+    {
+      "name": "Club Sandwich",
+      "ingredients": [
+        "Turkey",
+        "Bacon",
+        "Ham",
+        "Cheese",
+        "Lettuce",
+        "Tomato",
+        "Mayo"
+      ],
+      "description": "A Club Sandwich is one of the most iconic sandwiches on any menu! Layers of ham, bacon and turkey with juicy tomatoes, crisp lettuce and cheddar cheese create the perfect bite!"
+    }
+  ],
+  "hot sandwiches": [
+    {
+      "name": "Battered Mahi Mahi Sandwich",
+      "ingredients": [
+        "mahi mahi",
+        "cornstarch",
+        "beer",
+        "flour",
+        "Old Bay seasoning",
+        "canola oil"
+      ],
+      "description": "COOK LIKE A MAN” BEER BATTERED MAHI MAHI SANDWICHES"
+    },
+    {
+      "name": "BBQ Pulled Pork sandwich",
+      "ingredients": [
+        "pork shoulder roast",
+        "Smokey BBQ Rub",
+        "red onions",
+        "barbeque sauce"
+      ],
+      "description": "Loaded with juicy flavour packed pulled pork smothered in a homemade BBQ Sauce, piled high onto buns and topped with coleslaw."
+    },
+    {
+      "name": "BLT Ranch Chicken Sandwich",
+      "ingredients": [
+        "chicken breasts",
+        "buttermilk",
+        "ranch dressing",
+        "leaf lettuce",
+        "tomato",
+        "bacon",
+        "onion powder",
+        "ground white pepper",
+        "garlic powder",
+        "cayenne pepper",
+        "paprika",
+        "salt"
+      ],
+      "description": "It is fried chicken topped with bacon, lettuce, tomato and ranch dressing!"
+    }
+  ],
+  "desserts": [
+    {
+      "name": "Chocolate Eclair",
+      "ingredients": [
+        "graham crackers",
+        "vanilla pudding",
+        "milk",
+        "whipped topping",
+        "chocolate frosting"
+      ],
+      "description": "yummy for your tummy"
+    },
+    {
+      "name": "Coffee Cake",
+      "ingredients": [
+        "alight brown sugar",
+        "all purpose flour",
+        "ground cinnamon",
+        "butter",
+        "eggs",
+        "vanilla extract"
+      ],
+      "description": "Perfect for breakfast or brunch with a hot cup of coffee!"
+    },
+    {
+      "name": "Caramel Topped Ice Cream",
+      "ingredients": [
+        "crushed shortbread cookies",
+        "cashews",
+        "butter",
+        "vanilla ice cream",
+        "chocolate chips",
+        "powdered sugar",
+        "milk",
+        "vanilla"
+      ],
+      "description": "This ice cream cake is the perfect frozen dessert, with fudge, caramel, and salty pretzels!"
+    }
+  ],
+  "drinks": [
+    {
+      "name": "Json's Water",
+      "ingredients": "json's specialty",
+      "description": "Refreshing!"
+    },
+    {
+      "name": "Fresh Brewed Iced Tea",
+      "ingredients": ["json's water", "loose tea"],
+      "description": "Refreshing cold brew iced tea without the tannic, bitter flavors found in regular tea!"
+    },
+    {
+      "name": "Canned Sodas",
+      "yourChoice": ["Coke", "Diet Coke", "Root Beer", "7-up"]
+    }
+  ]
+}

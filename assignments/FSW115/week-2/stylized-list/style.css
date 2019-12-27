@@ -1,0 +1,12 @@
+body {
+  background-color: red;
+}
+
+.odd-list-item {
+  background-color: lime;
+}
+
+.even-list-item {
+  background-color: aqua;
+  font-size: 20px;
+}
