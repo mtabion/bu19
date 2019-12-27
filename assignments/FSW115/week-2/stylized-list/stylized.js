@@ -11,9 +11,6 @@ request.onload = function() {
     for (i = 0; i < myArr.results.length; i++) {
       var styleString = "";
 
-      // 5/3 = 1 remainder of 2
-      // 5%3 = 2
-
       if (i % 2 == 0) {
         styleString = "even-list-item";
       } else {
