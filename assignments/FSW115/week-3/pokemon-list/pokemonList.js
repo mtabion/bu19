@@ -18,7 +18,6 @@ xhr.onreadystatechange = function() {
     const data = JSON.parse(JSONdata);
     showData(data.results);
   }
-};
 function showData(pokemonArray) {
   for (let i = 0; i < pokemonArray; i++)
     var div = document.createElement("div");
