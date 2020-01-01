@@ -1,0 +1,14 @@
+.navbar {
+  /* background-color: blue; */
+  height: 50px;
+  float: right;
+  color: white;
+  font-weight: bold;
+}
+.navbarlink {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+}
