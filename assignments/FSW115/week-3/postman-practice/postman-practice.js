@@ -1,5 +1,6 @@
 const xhr_planets = new XMLHttpRequest();
 const xhr_person = new XMLHttpRequest();
+const xhr_toDo = new XMLHttpRequest();
 
 // ========================================= GET LIST OF PLANETS ==================================
 
@@ -11,11 +12,15 @@ xhr_planets.send();
 xhr_person.open("GET", "https://swapi.co/api/people/13/", true);
 xhr_person.send();
 
+//===================================GET ToDo Objects==========================================
+xhr_toDo.open("GET", "https://api.vschool.io/melvin/todo/", true);
+xhr_toDo.send();
+
 // ========================================= Planets onreadystatechange ==================================
 xhr_planets.onreadystatechange = function() {
   console.log(" ");
   console.log(" ");
-  console.log(" ");
+  //console.log(" ");
   console.log("onReadyStateChange");
   if (xhr_planets.readyState === 4 && xhr_planets.status === 200) {
     console.log("200 ok");
@@ -66,3 +71,34 @@ function showPerson(person) {
   div.textContent = person.name;
   document.body.appendChild(div);
 }
+
+//=================================Todo onReadyStateChange=============================
+xhr_toDo.onreadystatechange = function() {
+  console.log(" ");
+  console.log(" ");
+  console.log(" ");
+  console.log(" ");
+  console.log("onReadyStateChange");
+  if (xhr_toDo.readyState === 4 && xhr_toDo.status === 200) {
+    console.log("200 ok");
+    const JSONdata = xhr_toDo.responseText;
+    const data = JSON.parse(JSONdata);
+    console.log("data: " + JSON.stringify(data));
+    const results = data.results;
+    showToDo(results);
+    console.log(results);
+  }
+};
+
+// ========================================= showToDo ==================================
+function showToDo(toDo) {
+  // var title = document.createElement("h1");
+  // title.innerHTML = "ToDo";
+  // document.body.appendChild(title);
+  // for (let i = 0; i < toDo.length; i++) {
+  //   console.log(toDo[i]);
+  var div = document.createElement("div");
+  // div.textContent = toDo[i].name;
+  document.body.appendChild(div);
+}
+//}
