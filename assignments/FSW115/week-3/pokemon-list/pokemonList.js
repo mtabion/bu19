@@ -6,23 +6,30 @@
 // xhr.open() step-3
 // xhr.send() step-4
 // url: https://api.vschool.io/pokemon
+//api.vschool.io/pokemon
 
 const xhr = new XMLHttpRequest();
-
+// method  // url                     // async?
 xhr.open("GET", "https://api.vschool.io/pokemon", true);
 xhr.send();
 
 xhr.onreadystatechange = function() {
-  if (this.readyState === 4 && xhr.status === 200) {
+  if (xhr.readyState === 4 && xhr.status === 200) {
     const JSONdata = xhr.responseText;
     const data = JSON.parse(JSONdata);
-    showData(data.results);
+    const pokemons = data.objects[0].pokemon;
+    //console.log(pokemons);
+    showData(pokemons);
   }
+};
+
 function showData(pokemonArray) {
-  for (let i = 0; i < pokemonArray; i++)
+  for (let i = 0; i < pokemonArray.length; i++) {
+    console.log(pokemonArray[i]);
     var div = document.createElement("div");
-  div.textContent = pokemonArray[i].name;
-  document.body.appendChild(div);
+    div.textContent = pokemonArray[i].name;
+    document.body.appendChild(div);
+  }
 }
 // function showData(pokemonArray) {
 //   for (let i = 0; i < pokemonArray; i++) {

@@ -1,0 +1,23 @@
+.button-wrapper {
+  height: 200px;
+  width: auto;
+}
+button {
+  margin: 5px;
+  width: 80px;
+  height: 50px;
+  width: 200px;
+  display: inline-block;
+}
+.box-wrapper {
+  margin-bottom: 20px;
+  border: red;
+  border-style: solid;
+  border-width: thick;
+  background-color: red;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  width: 605px;
+}
