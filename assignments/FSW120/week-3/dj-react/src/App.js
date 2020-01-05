@@ -94,9 +94,7 @@ class App extends Component {
     return (
       <div>
         <div className="button-wrapper">
-          <button onClick={this.smallTime} onmouseenter="playAudio()">
-            SmallTime Dj
-          </button>
+          <button onClick={this.smallTime}>SmallTime Dj</button>
           <button onClick={this.party}>Party Dj</button>
           <button onClick={this.professionalDj1}>ProfessionalDj1</button>
           <button onClick={this.professionalDj2}>ProfessionalDj2</button>
@@ -117,3 +115,16 @@ class App extends Component {
 }
 
 export default App;
+
+// <div className="blog-list">
+//    {this.props.posts.map(post => {
+//       return (
+//         <BlogPost
+//           title={post.title}
+//           subtitle={post.subTitle}
+//           author={post.author}
+//           date={post.date}
+//           />
+//         );
+//       })}
+// </div>
