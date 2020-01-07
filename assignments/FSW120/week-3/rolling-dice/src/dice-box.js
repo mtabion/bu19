@@ -16,12 +16,12 @@ class DiceBox extends Component {
       rolls[i] = Math.floor(Math.random() * 6) + 1;
       // console.log(rolls[i]);
 
-      rollSum += rolls[i];
+      //   rollSum += rolls[i];
     }
     this.setState({
       numberOfDice,
-      rolls,
-      rollSum
+      rolls
+      //   rollSum
     });
   };
 
