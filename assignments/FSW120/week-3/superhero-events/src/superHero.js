@@ -3,7 +3,9 @@ import "./App.css";
 class SuperHero extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      props: SuperHero
+    };
   }
 
   render() {

@@ -1,14 +1,18 @@
 import React from "react";
 import SuperHero from "./superHero";
-const data = require("./data.json");
 
-const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+const data = require("./data.json");
+// console.log(data);
+
+const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+// console.log(numbers);
 
 class HeroList extends React.Component {
   constructor() {
     super();
-
-    this.state = {};
+    this.state = {
+      heroList: SuperHero
+    };
   }
 
   render() {
@@ -23,7 +27,6 @@ class HeroList extends React.Component {
                 alert(data.catchPhrase);
               }}
               key={numbers[nums]}
-              //   className={classes[nums]}
               h1={data.name}
               h3={data.show}
               src={data.imageName}

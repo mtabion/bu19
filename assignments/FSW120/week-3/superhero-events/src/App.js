@@ -1,10 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 import HeroList from "./heroList";
-function App() {
-  return (
-    <div>
-      <HeroList />
-    </div>
-  );
+
+class App extends Component {
+  state = {};
+  render() {
+    return (
+      <div>
+        <HeroList />
+      </div>
+    );
+  }
 }
+
 export default App;
