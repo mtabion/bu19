@@ -11,7 +11,7 @@ class App extends Component {
     var tempNamesArray = this.state.names;
     //["Melvin"]
     tempNamesArray.push(this.state.currentName);
-    //["Melvin", "Ron"]
+    //["Melvin", "Melvin"]
 
     this.setState({ names: tempNamesArray, currentName: "" });
     console.log("button Pressed");
