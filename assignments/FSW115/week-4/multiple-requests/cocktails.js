@@ -1,27 +1,30 @@
-// Get requests with axios
-// url: https://api.vschool.io/scrimbalessons/todo
-
-//const axios = require("axios");
-
-document.getElementById("page1-request").addEventListener("click", function() {
-  let element = document.getElementById("list");
+document.getElementById("get-cocktails").addEventListener("click", function() {
+  let element = document.getElementById("container");
   element.innerHTML = "";
   // document.getElementById("demo").innerHTML = "Hello World";
   // Get All Chuck Norris Jokes
   axios
-    .get("https://api.chucknorris.io/jokes/search?query=norris")
+    .get("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=vodka")
     .then(function(response) {
       console.log(response.data);
-      let jokes = response.data.result;
+      let cocktails = response.data.drinks;
 
       // Iterate response.data
       // Loop over the array
       for (let index = 0; index < 10; index++) {
-        let random = Math.floor(Math.random() * (jokes.length - 1));
-        console.log(jokes[index].value);
-        let liElement = document.createElement("li");
-        liElement.innerText = jokes[random].value;
+        let random = Math.floor(Math.random() * (cocktails.length - 1));
+        console.log(cocktails[index].strDrink);
+        let liElement = document.createElement("div");
+        liElement.setAttribute("class", "box");
+        let img = document.createElement("img");
+        img.setAttribute("src", cocktails[random].strDrinkThumb);
+        img.setAttribute("alt", cocktails[random].strDrink);
+        img.setAttribute("width", "200");
+        img.setAttribute("heigth", "200");
+        liElement.innerText = cocktails[random].strDrink;
+        liElement.appendChild(img);
         element.appendChild(liElement);
+        //element.appendChild(img);
       }
     })
     .catch(error => console.log(error));

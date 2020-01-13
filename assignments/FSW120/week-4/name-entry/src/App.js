@@ -10,7 +10,8 @@ class App extends Component {
   addNames = () => {
     var tempNamesArray = this.state.names;
     //["Melvin"]
-    tempNamesArray.push(this.state.currentName);
+    // tempNamesArray.push(this.state.currentName); // adds names to end of array
+    tempNamesArray.unshift(this.state.currentName); // adds names to beginning of array
     //["Melvin", "Melvin"]
 
     this.setState({ names: tempNamesArray, currentName: "" });
