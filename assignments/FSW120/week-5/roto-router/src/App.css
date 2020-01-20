@@ -1,0 +1,39 @@
+.home-wrapper {
+  /* background-image: url("https://i44.photobucket.com/albums/f44/mtabion/toy-stories_zpsnx3rcl1c.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px; */
+}
+.footer-wrapper {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: darkcyan;
+  margin: auto, 0;
+}
+.footer-header {
+  font-size: 20px;
+}
+.nav {
+  background-color: darkcyan;
+  width: 100%;
+  height: 50px;
+}
+.navList-items {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 20px;
+  line-height: 50px;
+}
+.nav-lists {
+  text-align: center;
+}
+.about-header {
+  text-align: center;
+}
+.about-para {
+  padding-right: 50px;
+  padding-left: 50px;
+}

@@ -15,11 +15,16 @@ xhr.onreadystatechange = function() {
   }
 };
 
+fetch("https://api.vschool.io/melvin/todo").then(res => {
+  console.log(res);
+});
+
 function showData(todos) {
   for (let i = 0; i < todos.length; i++) {
     console.log();
 
     let div = document.createElement("div");
+    div.classList.add("todo-entry");
     let title = document.createElement("h1");
     let description = document.createElement("p");
     let image = document.createElement("img");

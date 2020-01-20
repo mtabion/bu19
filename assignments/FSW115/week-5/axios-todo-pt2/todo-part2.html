@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Axios-Todo Parts 2, 3, 4</title>
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body onload="loadTodos()">
+    <div className="input-wrapper">
+      <input id="title" value="" placeholder="Title" />
+      <input id="description" value="" placeholder="Description" />
+      <input id="price" value="" placeholder="Price" />
+      <button type="submit" onclick="addNewTodo()">Add Todo</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="todopart2.js"></script>
+  </body>
+</html>

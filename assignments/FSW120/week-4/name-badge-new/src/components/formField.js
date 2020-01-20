@@ -16,23 +16,20 @@ const FormField = () => {
     setPOB: "Place Of Birth:",
     setPhone: "Phone#:",
     setfavFood: "Favorite Food:",
-    isSubmited: false
+    isSubmitted: false
   });
   //use state hooks to set initial state for results from the form
   const [badgeList, setBadgeList] = useState([]);
   // handleChange to update state with the form info
   function handleChange(evt) {
     const value = evt.target.value;
-    setState({
-      ...state,
-      [evt.target.name]: value
-    });
-    //   console.log(evt.target.name + " " + evt.target.value);
+    setState({ ...state, [evt.target.name]: value });
+    // console.log(evt.target.name + " " + evt.target.value);
   }
 
   //onsubmit pushing results of the form to the badgelist state array
   function submitAndChange(evt) {
-    evt.preventDefault(); //prevents the natural form behavior from resetting
+    //evt.preventDefault(); //prevents the natural form behavior from resetting
 
     setBadgeList([
       ...badgeList,
@@ -44,9 +41,13 @@ const FormField = () => {
         phone: state.phone,
         favoriteFood: state.favoriteFood,
         about: state.about
-        // isSubmited: false,
+
+        // isSubmitted: false,
       }
     ]);
+    console.log("Clearing form");
+    document.getElementById("my-form").reset();
+    setState({ firstName: "", about: "" });
   }
 
   return (
@@ -54,6 +55,7 @@ const FormField = () => {
       <h1></h1>
       <div>
         <form
+          id="my-form"
           style={{
             borderRadius: "10px",
             padding: "5px",
@@ -137,6 +139,8 @@ const FormField = () => {
           ></textarea>
 
           <button
+            type="reset"
+            value="Reset Form"
             className="formSubmit"
             name="submit"
             onClick={submitAndChange}
