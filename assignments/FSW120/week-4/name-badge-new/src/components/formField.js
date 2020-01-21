@@ -10,12 +10,12 @@ const FormField = () => {
     phone: "",
     favoriteFood: "",
     about: "",
-    setFirst: "First Name:",
-    setLast: "Last Name:",
-    setEmail: "Email:",
-    setPOB: "Place Of Birth:",
-    setPhone: "Phone#:",
-    setfavFood: "Favorite Food:",
+    // setFirst: "First Name:",
+    // setLast: "Last Name:",
+    // setEmail: "Email:",
+    // setPOB: "Place Of Birth:",
+    // setPhone: "Phone#:",
+    // setfavFood: "Favorite Food:",
     isSubmitted: false
   });
   //use state hooks to set initial state for results from the form
@@ -29,7 +29,7 @@ const FormField = () => {
 
   //onsubmit pushing results of the form to the badgelist state array
   function submitAndChange(evt) {
-    //evt.preventDefault(); //prevents the natural form behavior from resetting
+    // evt.preventDefault(); //prevents the natural form behavior from resetting
 
     setBadgeList([
       ...badgeList,
@@ -45,7 +45,7 @@ const FormField = () => {
         // isSubmitted: false,
       }
     ]);
-    console.log("Clearing form");
+    // console.log("Clearing form");
     document.getElementById("my-form").reset();
     setState({ firstName: "", about: "" });
   }
@@ -57,17 +57,24 @@ const FormField = () => {
         <form
           id="my-form"
           style={{
-            borderRadius: "10px",
-            padding: "5px",
-            border: "solid 2px black",
+            width: "80%",
             display: "flex",
-            height: "300px",
-            flexDirection: "column",
+            // flexDirection: "row",
             alignItems: "center",
-            justifyContent: "center",
+            justifyContent: "space-between",
             flexWrap: "wrap",
+            margin: "0 auto",
+
+            // padding: "5px",
+            border: "solid 2px black",
+            // display: "flex",
+            // height: "300px",
+            flexDirection: "column",
+            // alignItems: "center",
+            // justifyContent: "center",
+            // flexWrap: "wrap",
             textAlign: "center",
-            margin: "10px",
+            // margin: "10px",
             backgroundColor: "aqua"
           }}
         >
@@ -88,7 +95,7 @@ const FormField = () => {
               value={state.firstName}
               name="firstName"
               onChange={handleChange}
-              placeholder={state.setFirst}
+              placeholder="First Name:" //{state.setFirst}
             />
             <input
               type="text"
@@ -96,7 +103,7 @@ const FormField = () => {
               name="lastName"
               value={state.lastName}
               onChange={handleChange}
-              placeholder={state.setLast}
+              placeholder="Last Name:" //{state.setLast}
             />
             <input
               type="text"
@@ -104,7 +111,7 @@ const FormField = () => {
               name="email"
               value={state.email}
               onChange={handleChange}
-              placeholder={state.setEmail}
+              placeholder="Email:" //{state.setEmail}
             />
             <input
               type="text"
@@ -112,7 +119,7 @@ const FormField = () => {
               className="formInput"
               value={state.placeOfBirth}
               onChange={handleChange}
-              placeholder={state.setPOB}
+              placeholder="POB:" //{state.setPOB}
             />
             <input
               type="number"
@@ -120,7 +127,7 @@ const FormField = () => {
               className="formInput"
               value={state.phone}
               onChange={handleChange}
-              placeholder={state.setPhone}
+              placeholder="Phone #:" //{state.setPhone}
             />
             <input
               type="text"
@@ -128,7 +135,7 @@ const FormField = () => {
               value={state.favoriteFood}
               className="formInput"
               onChange={handleChange}
-              placeholder={state.setfavFood}
+              placeholder="Favorite Food:" //{state.setfavFood}
             />
           </div>
           <textarea
@@ -136,6 +143,7 @@ const FormField = () => {
             name="about"
             value={state.about}
             onChange={handleChange}
+            placeholder="About:"
           ></textarea>
 
           <button
@@ -213,13 +221,3 @@ const Badge = props => {
   );
 };
 export default FormField;
-
-//<Badge
-//     //       fname={badge.firstName}
-//     //       lname={badge.lastName}
-//     //       email={badge.email}
-//     //       num={badge.phone}
-//     //       pob={badge.placeOfBirth}
-//     //       faveFood={badge.favoriteFood}
-//     //       about={badge.about}
-//     //     />
