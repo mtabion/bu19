@@ -10,13 +10,13 @@ const FormField = () => {
     phone: "",
     favoriteFood: "",
     about: "",
+    isSubmitted: false
     // setFirst: "First Name:",
     // setLast: "Last Name:",
     // setEmail: "Email:",
     // setPOB: "Place Of Birth:",
     // setPhone: "Phone#:",
     // setfavFood: "Favorite Food:",
-    isSubmitted: false
   });
   //use state hooks to set initial state for results from the form
   const [badgeList, setBadgeList] = useState([]);
@@ -221,3 +221,17 @@ const Badge = props => {
   );
 };
 export default FormField;
+
+// function phonenumber(inputtxt)
+// {
+//   var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+//   if((inputtxt.value.match(phoneno))
+//         {
+//       return true;
+//         }
+//       else
+//         {
+//         alert("message");
+//         return false;
+//         }
+// }
