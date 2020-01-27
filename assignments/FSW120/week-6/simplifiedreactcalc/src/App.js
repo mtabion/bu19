@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import { Route, Link, Switch, BrowserRouter } from "react-router-dom";
 import "./App.css";
 
-import Home from "./components/home.js";
-import About from "./components/about.js";
+import Add from "./components/add.js";
+import Multiply from "./components/multiply.js";
+import Subtract from "./components/subtract.js";
+import Divide from "./components/divide.js";
 
 class App extends Component {
   render() {
@@ -13,19 +15,32 @@ class App extends Component {
           <nav className="nav">
             <ul className="nav-lists">
               <li className="navList-items">
-                <Link to="/">Home</Link>
+                <Link to="/add">Add</Link>
               </li>
               <li className="navList-items">
-                <Link to="/about">About</Link>
+                <Link to="/subtract">Subtract</Link>
+              </li>
+              <li className="navList-items">
+                <Link to="/multiply">Multiply</Link>
+              </li>
+              <li className="navList-items">
+                <Link to="/divide">Divide</Link>
               </li>
             </ul>
           </nav>
           <Switch>
-            <Route path="/about">
-              <About />
+            <Route path="/add">
+              <Add operator="+" />
             </Route>
-            <Route path="/">
-              <Home />
+            <Route path="/subtract">
+              <Subtract operator="-" />
+            </Route>
+
+            <Route path="/multiply">
+              <Multiply operator="*" />
+            </Route>
+            <Route path="/divide">
+              <Divide operator="/" />
             </Route>
           </Switch>
         </div>
