@@ -28,7 +28,6 @@ function Subtract(props) {
   };
 
   let resetForm = () => {
-    //JUse the react hooks for the three changable parts of this component. Num1, num2 and result
     setNum1(0);
     setNum2(0);
     setResult(0);
