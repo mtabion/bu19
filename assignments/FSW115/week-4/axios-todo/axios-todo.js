@@ -10,7 +10,7 @@ xhr.onreadystatechange = function() {
     const data = JSON.parse(JSONdata);
     console.log(data);
     const todos = data;
-    //console.log(pokemons);
+    console.log(todos);
     showData(todos);
   }
 };

@@ -1,0 +1,83 @@
+.tweet-fullview-wrapper {
+  height: 250px;
+  width: 500px;
+  background-color: rgb(113, 211, 113);
+  border: solid 2px black;
+
+  display: flex;
+  flex-flow: row;
+
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.tweet-fullview-wrapper .column1-wrapper {
+  flex: 0 0 30%;
+  /* background-color: tan; */
+
+  display: flex;
+  flex-flow: column;
+}
+
+.tweet-fullview-wrapper .column1-wrapper .image-wrapper {
+  flex: 0 0 80%;
+  /* background-color: orange; */
+
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.tweet-fullview-wrapper .column1-wrapper .image-wrapper img {
+  height: 150px;
+  width: 150px;
+}
+.tweet-fullview-wrapper .column1-wrapper .name-wrapper {
+  flex: 0 0 20%;
+  /* background-color: red; */
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.tweet-fullview-wrapper .column2-wrapper {
+  flex: 1 1 70%;
+  background-color: grey;
+  padding: 20px;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.tweet-fullview-wrapper .column2-wrapper .tweet-content-wrapper {
+  flex: 1 1 auto;
+  background-color: darkcyan;
+  text-align: left;
+  padding: 5px;
+  display: flex;
+  flex-flow: column;
+}
+
+.tweet-fullview-wrapper .column2-wrapper .tweet-content-wrapper textarea {
+  flex: 1 1 auto;
+  resize: none;
+}
+.tweet-fullview-wrapper .column2-wrapper .bottom-controls-wrapper {
+  flex: 0 0 30px;
+  background-color: pink;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+
+.tweet-fullview-wrapper
+  .column2-wrapper
+  .bottom-controls-wrapper
+  .control-wrapper {
+  flex: 0 0 100px;
+  text-align: center;
+  color: red;
+}

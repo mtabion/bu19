@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+.App {
+  text-align: center;
+
+  display: flex;
+  flex-flow: column;
+  background-color: rgba(107, 107, 253, 0.356);
+}
+.navigation-bar {
+  text-decoration: none;
+  list-style-type: none;
+}
+.nav-area {
+  /* background-color: aqua; */
+}
+
+.main-content-wrapper {
+  /* background-color: purple; */
+  padding: 10px;
+
+  display: flex;
+  flex-flow: column;
+
+  align-items: center;
+}
