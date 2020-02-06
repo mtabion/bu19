@@ -32,7 +32,7 @@ function Subtract(props) {
     setNum2(0);
     setResult(0);
   };
-  console.log(operator);
+  // console.log(operator);
   return (
     <div className="home-wrapper">
       <h2 className="home-header">Simple Calculator</h2>

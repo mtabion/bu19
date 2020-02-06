@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Capstone Project Todo</title>
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body onload="loadTodos()">
+    <div className="input-wrapper">
+      <!-- <input id="title" value="" placeholder="Character ID" /> -->
+      <input id="price" type="number" value="" placeholder="Character ID" />
+      <!-- <input id="description" value="" placeholder="Character Notes" /> -->
+
+      <button type="submit" onclick="addNewCharacter()">Add Character</button>
+    </div>
+    <!-- <button id="loadAPIData" onclick="loadAPIData()">Add to Todo List</button> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="todoWK7.js"></script>
+  </body>
+</html>

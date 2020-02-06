@@ -42,17 +42,17 @@
     },
     {
       "author": "Benjamin",
-      "author_id": 3,
+      "author_id": 5,
       "tweet": "I mean, why would a Pop-Tart want to live inside a toaster, Rick? I mean, that would be like the scariest place for them to live. You know what I mean?",
-      "tweet_id": 3,
+      "tweet_id": 5,
       "author_image": "https://rickandmortyapi.com/api/character/avatar/34.jpeg",
       "date": null
     },
     {
       "author": "Armagheadon",
-      "author_id": 3,
+      "author_id": 6,
       "tweet": "You're missing the point Morty. Why would he drive a smaller toaster with wheels? I mean, does your car look like a smaller version of your house?",
-      "tweet_id": 3,
+      "tweet_id": 6,
       "author_image": "https://rickandmortyapi.com/api/character/avatar/24.jpeg",
       "date": null
     }

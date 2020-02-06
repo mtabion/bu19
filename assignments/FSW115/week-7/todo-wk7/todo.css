@@ -1,0 +1,30 @@
+.todo-entry {
+  border: solid 1px black;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.todo-entry * {
+  flex: 1 1 25%;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+input {
+  height: 25px;
+  width: 150px;
+  font-size: 12px;
+}
+.delete-button {
+  display: inline-block;
+  align-items: center;
+  border-radius: 20px;
+  background-color: cornflowerblue;
+  height: 20px;
+  width: 50px;
+}
