@@ -3,21 +3,43 @@
   display: flex;
   flex-flow: row;
   align-items: center;
-  justify-content: space-around;
   padding: 10px;
 }
 
-.todo-entry * {
-  flex: 1 1 25%;
+.todo-entry > * {
+  margin: 10px;
 }
 
+.todo-entry > *:nth-child(1) {
+  flex: 0 0 5%;
+}
+.todo-entry > *:nth-child(2) {
+  flex: 0 0 20%;
+}
+.todo-entry > *:nth-child(3) {
+  flex: 0 0 20%;
+}
+.todo-entry > *:nth-child(4) {
+  flex: 0 0 10%;
+}
+.todo-entry > *:nth-child(5) {
+  flex: 1 1 auto;
+}
+.todo-entry > *:nth-child(6) {
+  flex: 0 0 10%;
+}
+
+img {
+  height: auto;
+  width: auto;
+  max-width: 100px;
+}
 .strikethrough {
   text-decoration: line-through;
 }
 
 input {
   height: 25px;
-  width: 150px;
   font-size: 12px;
 }
 .delete-button {

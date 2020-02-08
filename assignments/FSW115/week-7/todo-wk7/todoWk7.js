@@ -49,7 +49,15 @@ function addNewCharacter() {
   console.log("Adding to do...");
   //let description = document.getElementById("description").value;
   let price = document.getElementById("price").value;
-  //console.log("description_1: " + description);
+  document.getElementById("price").value = "";
+
+  //Remove all the div rows
+  let characterRows = document.getElementsByClassName("todo-entry");
+  console.log(`There are ${characterRows.length} rows`);
+  let characterRowsContainer = document.getElementById("character-rows");
+  while (characterRowsContainer.hasChildNodes()) {
+    characterRowsContainer.removeChild(characterRowsContainer.firstChild);
+  }
   console.log("price: " + price);
 
   axios({
@@ -63,6 +71,7 @@ function addNewCharacter() {
   })
     .then(response => {
       console.log(response);
+      loadTodos();
     })
     .catch(error => {
       console.log("ERROR");
@@ -82,6 +91,14 @@ function checkBoxChecked(todoIndexNumber) {
   });
 }
 function deleteTodo(todoIndexNumber) {
+  //Remove all the div rows
+  let characterRows = document.getElementsByClassName("todo-entry");
+  console.log(`There are ${characterRows.length} rows`);
+  let characterRowsContainer = document.getElementById("character-rows");
+  while (characterRowsContainer.hasChildNodes()) {
+    characterRowsContainer.removeChild(characterRowsContainer.firstChild);
+  }
+
   var todo = todos[todoIndexNumber];
   var id = todo._id;
 
@@ -89,6 +106,7 @@ function deleteTodo(todoIndexNumber) {
 
   axios.delete(url).then(response => {
     console.log(response);
+    loadTodos();
   });
 }
 
@@ -117,6 +135,9 @@ function showData(todos) {
         let div = document.createElement("div");
         div.classList.add("todo-entry");
 
+        let characterImage = document.createElement("img");
+        characterImage.setAttribute("src", response.data.image);
+
         let characterID = document.createElement("h3");
         let characterName = document.createElement("h1");
         let description = document.createElement("input");
@@ -131,6 +152,8 @@ function showData(todos) {
         button.setAttribute("onclick", "deleteTodo(" + i + ")");
         button.innerText = "Delete";
 
+        let aliveOrDead = document.createElement("div");
+        aliveOrDead.textContent = response.data.status;
         let button_edit = document.createElement("button");
         button_edit.setAttribute("onclick", "updateTodo(" + i + ")");
         button_edit.innerText = "Edit";
@@ -141,12 +164,14 @@ function showData(todos) {
         description.value = todos[i].description;
 
         div.appendChild(characterID);
+        div.appendChild(characterImage);
         div.appendChild(characterName);
+        div.appendChild(aliveOrDead);
         div.appendChild(description);
-        div.appendChild(price);
-        div.appendChild(button);
 
-        document.body.appendChild(div);
+        div.appendChild(button);
+        document.getElementById("character-rows").appendChild(div);
+        //document.body.appendChild(div);
       })
       .catch(err => {
         console.log(err);
