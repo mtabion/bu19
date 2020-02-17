@@ -3,7 +3,11 @@ import PropTypes from "prop-types";
 //import UserContext from "./userContext";
 
 function Button(props) {
-  return <button className={`${props.theme}-theme`}>Switch Theme</button>;
+  return (
+    <button onClick={props.handleClick} className={`${props.theme}-theme`}>
+      Switch Theme
+    </button>
+  );
 }
 
 Button.propTypes = {

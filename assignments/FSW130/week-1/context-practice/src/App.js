@@ -5,23 +5,29 @@ import Main from "./Main";
 import Footer from "./Footer";
 
 class App extends React.Component {
-  // static contextType = UserContext;
+  state = {
+    themeChange: "dark"
+  };
   render() {
-    const username = this.context;
     return (
-      <div>
-        <UserContext.Consumer>
-          {theme => <Header theme={theme} />}
-        </UserContext.Consumer>
+      <UserContext.Consumer>
+        {value => (
+          <div>
+            <Header theme={this.state.themeChange} />
+            <Main
+              handleClick={() => {
+                this.setState(prevState => ({
+                  themeChange:
+                    prevState.themeChange === "light" ? "dark" : "light"
+                }));
+              }}
+              theme={this.state.themeChange}
+            />
 
-        <UserContext.Consumer>
-          {theme => <Main theme={theme} />}
-        </UserContext.Consumer>
-
-        <UserContext.Consumer>
-          {theme => <Footer theme={theme} />}
-        </UserContext.Consumer>
-      </div>
+            <Footer theme={this.state.themeChange} />
+          </div>
+        )}
+      </UserContext.Consumer>
     );
   }
 }
