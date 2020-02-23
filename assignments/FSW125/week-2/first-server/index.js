@@ -1,13 +1,10 @@
-const express = require("express"); //name of installed pkg in node_modules "express"
+const express = require("express");
 const app = express();
 
-// app.js has 2 arguments 1. endpoint (mount path) 2. callback function
 app.get("/userdata", (req, res) => {
-  // req= request res= response
-  res.send([{ name: "Joe", age: "20" }]);
+  res.send([{ name: "Melvin", age: "21", location: "Las Vegas" }]);
 });
 app.get("/characters", (req, res) => {
-  // req= request res= response
   let characters = [
     {
       id: 1,
@@ -81,26 +78,22 @@ app.get("/origins", (req, res) => {
     {
       name: "Earth (Replacement Dimension)",
       url: "https://rickandmortyapi.com/api/location/20"
+    },
+    {
+      name: "Abadango",
+      url: "https://rickandmortyapi.com/api/location/2"
+    },
+    {
+      name: "Signus 5 Expanse",
+      url: "https://rickandmortyapi.com/api/location/22"
     }
   ];
-  // req= request res= response
+
   res.send(origins);
 });
-// app.put();
-// app.post();
-// app.delete();
 
 app.listen(9000, () => {
-  // app.listen needs two arguments: port and callback
   console.log("The serer is running on port 9000");
 });
 
 // control c will stop the process in terminal
-// choosing port #s use localhost:3001-9000/
-
-// *Vocabulary* v v v
-// Route- An eventListener for http requests
-
-// Endpoint- "/item" "/user"
-
-// Port- localhost:9000/item
