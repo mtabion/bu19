@@ -1,0 +1,24 @@
+body {
+  background-color: black;
+  display: inline-block;
+  /* align-items: center; */
+  margin-left: 30%;
+}
+.App-header {
+  border-radius: 50px;
+  width: 100%;
+  background-color: burlywood;
+  border: 1px solid black;
+  align-items: center;
+  padding-bottom: 50px;
+  font-size: 50px;
+}
+button {
+  background-color: brown;
+  border-radius: 25px;
+  font-size: 25px;
+  width: 140px;
+}
+h1 {
+  margin-left: 110px;
+}
