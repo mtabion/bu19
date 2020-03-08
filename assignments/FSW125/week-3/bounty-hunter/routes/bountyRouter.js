@@ -18,6 +18,30 @@ const bountyHunters = [
     BountyAmount: 6000,
     Type: "Human",
     _id: uuid()
+  },
+  {
+    FirstName: "Obees",
+    LastName: "Ramee",
+    Living: true,
+    BountyAmount: 1000,
+    Type: "Gran",
+    _id: uuid()
+  },
+  {
+    FirstName: "Onicrop",
+    LastName: "K'Cin",
+    Living: true,
+    BountyAmount: 1500,
+    Type: Ugnaught,
+    _id: uuid()
+  },
+  {
+    FirstName: "Grillo",
+    LastName: "Zammon",
+    Living: true,
+    BountyAmount: 4000,
+    Type: "Aqualish",
+    _id: uuid()
   }
 ];
 
