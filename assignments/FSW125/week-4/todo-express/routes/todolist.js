@@ -6,42 +6,43 @@ app.use(express.json());
 
 const todos = [
   {
-    name: "The name",
-    description: "description of todo",
-    imageUrl: "http://anyimage",
+    name: "Pay bills",
+    description: "Car loan payment",
+    imageUrl:
+      "https://www.kbb.com/articles/wp-content/uploads/2019/10/01-car-buying-600x450.jpg",
     completed: false,
     _id: uuid()
   },
   {
-    FirstName: "Luke",
-    LastName: "Skywalker",
-    Living: true,
-    TodoAmount: 6000,
-    Type: "Human",
+    name: "Go Groceries",
+    description: "Make a list before going to Smith's",
+    imageUrl:
+      "https://image.shutterstock.com/image-photo/groceries-bag-fruit-260nw-298838690.jpg",
+    completed: false,
     _id: uuid()
   },
   {
-    FirstName: "Obees",
-    LastName: "Ramee",
-    Living: true,
-    TodoAmount: 1000,
-    Type: "Gran",
+    name: "Gun range",
+    description: "Spend an hour shooting practice",
+    imageUrl:
+      "https://www.provo.org/Home/ShowPublishedImage/5333/635169221954070000",
+    completed: false,
     _id: uuid()
   },
   {
-    FirstName: "Onicrop",
-    LastName: "K'Cin",
-    Living: true,
-    TodoAmount: 1500,
-    Type: "Ugnaught",
+    name: "Chores",
+    description: "Cut branches off tree",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ5is_Aj_EY-YYk2TWJqjX4HvR2TlYqCRfsAc4u0WtCQTp8KV4S",
+    completed: false,
     _id: uuid()
   },
   {
-    FirstName: "Grillo",
-    LastName: "Zammon",
-    Living: true,
-    TodoAmount: 4000,
-    Type: "Aqualish",
+    name: "Car maintenance",
+    description: "Oil change on Jeep",
+    imageUrl:
+      "https://www.wayalife.com/photos/_data/i/upload/2018/04/12/20180412110547-cca3f94c-me.jpg",
+    completed: false,
     _id: uuid()
   }
 ];
@@ -87,7 +88,7 @@ app.put("/:todoId", (req, res) => {
   console.log("updateObject: " + JSON.stringify(updateObject));
   console.log("todos[todoIndex]: " + JSON.stringify(todos[todoIndex]));
   console.log(" ");
-  console.log(" ===================================== ");
+  console.log(" ");
   const updateTodo = Object.assign(todos[todoIndex], updateObject);
   res.send(updateTodo);
 });
