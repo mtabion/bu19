@@ -1,7 +1,5 @@
-//Create a default state
 let defaultState = [];
 
-//Set up the reducer
 reducer = (state = defaultState, action) => {
   switch (action.type) {
     case "Add Contact":
@@ -25,10 +23,8 @@ render = () => {
   document.getElementById("contacts-list").innerHTML = "";
 
   for (var i = 0; i < contacts.length; i++) {
-    //Create the contact wrapper
     let contactWrapper = document.createElement("div");
 
-    //Create the divs for the info and update the text
     let nameDiv = document.createElement("div");
     nameDiv.classList.add("contact-name");
     nameDiv.innerText = contacts[i].name;

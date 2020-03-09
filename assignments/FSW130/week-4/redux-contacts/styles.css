@@ -1,0 +1,16 @@
+body {
+  background-color: blueviolet;
+}
+#contacts-list {
+  text-align: center;
+  background-color: chartreuse;
+  padding: 10px;
+}
+.add-new-contact-form {
+  text-align: center;
+  margin: 15px;
+  height: 25px;
+}
+input {
+  height: 20px;
+}
