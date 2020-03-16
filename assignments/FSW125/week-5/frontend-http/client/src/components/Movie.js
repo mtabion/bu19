@@ -4,7 +4,6 @@ import AddMovieForm from "./AddMovieForm.js";
 export default function Movie(props) {
   const { title, genre, _id } = props;
   const [editToggle, setEditToggle] = useState(false);
-  // console.log("props in Movie.js", props);
   return (
     <div className="movie">
       {!editToggle ? (

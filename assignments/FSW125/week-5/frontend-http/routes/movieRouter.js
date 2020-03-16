@@ -39,27 +39,17 @@ movieRouter.post("/", (req, res) => {
 });
 
 movieRouter.delete("/:movieId", (req, res) => {
-  // console.log("delete");
   const movieId = req.params.movieId;
   const movieIndex = movies.findIndex(movie => movie._id == movieId);
   movies.splice(movieIndex, 1);
-  // console.log("movieIndex", movieIndex);
-  // console.log("movies", movies);
-  // console.log("delete done");
   res.send("Successfully deleted a movie");
 });
 
 movieRouter.put("/:movieId", (req, res) => {
-  // console.log("edit");
   const movieId = req.params.movieId;
   const updateObject = req.body;
-  // console.log("movieId", movieId);
-  // console.log("updateObject", updateObject);
   const movieIndex = movies.findIndex(movie => movie._id == movieId);
-  // console.log("movieIndex", movieIndex);
-  // console.log("returning movie", movies[movieIndex]);
   const updatedMovie = Object.assign(movies[movieIndex], updateObject);
-  // console.log("movies", movies);
   res.send(updatedMovie);
 });
 

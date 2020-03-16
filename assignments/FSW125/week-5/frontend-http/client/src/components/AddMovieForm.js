@@ -11,7 +11,6 @@ export default function AddMovieForm(props) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    // console.log("props", props);
     props.submit(inputs, props._id);
     setInputs(initInputs);
   }
