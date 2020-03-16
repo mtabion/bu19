@@ -2,7 +2,14 @@ let tvshowsDefaultState = [
   {
     title: "SpongeBob SquarePants",
     location: "Los Angeles, California",
-    genre: "Animation"
+    genre: "Animation",
+    id: 1
+  },
+  {
+    title: "Walking Dead",
+    location: "Senoia, Georgia",
+    genre: "Thriller",
+    id: 2
   }
 ];
 tvshowsReducer = (state = tvshowsDefaultState, action) => {

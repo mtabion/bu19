@@ -24,8 +24,7 @@ render();
 
 store.subscribe(render);
 
-//Do a bunch of dispatches here
-
+// dispatchers here
 store.dispatch({
   type: "ADD_MOVIE",
   payload: {
@@ -51,7 +50,7 @@ setTimeout(() => {
 
 setTimeout(() => {
   store.dispatch({ type: "DELETE_MOVIE", payload: "Pan's Labyrinth" });
-}, 3000);
+}, 4000);
 
 setTimeout(() => {
   store.dispatch({ type: "DELETE_TVSHOW", payload: "SpongeBob SquarePants" });

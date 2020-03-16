@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Movie from "./components/Movie.js";
 import AddMovieForm from "./components/AddMovieForm.js";
+import "./components/styles.css";
 
 export default function App() {
   const [movies, setMovies] = useState([]);
@@ -34,6 +35,7 @@ export default function App() {
   }
 
   function editMovie(updates, movieId) {
+    console.log("editMovie", movieId);
     axios
       .put(`/movies/${movieId}`, updates)
       .then(res => {
