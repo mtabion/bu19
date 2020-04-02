@@ -65,14 +65,11 @@ function App(props) {
   );
 }
 
-//We have to write a map state to props function
 const mapStateToProps = state => {
   return {
     contacts: state.contacts
   };
 };
-
-//Write the map dispatch to props function
 
 const mapDispatchToProps = dispatch => {
   return {
@@ -82,5 +79,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-// What parts of state do you want?,  What actions to dispatch?
 export default connect(mapStateToProps, mapDispatchToProps)(App);
