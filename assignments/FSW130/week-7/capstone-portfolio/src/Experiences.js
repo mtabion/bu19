@@ -1,10 +1,12 @@
 import React from "react";
-import Thumbnail from "./Thumbnail/Thumbnail.js";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 import "./App.css";
+import "./Experiences.css";
 
 function Experiences(props) {
   return (
+    // Render a Thumbnail component
     <div>
       <div className="navigation-sub">
         <Link to="/" className="item">
@@ -18,26 +20,28 @@ function Experiences(props) {
         </Link>
       </div>
       <h1>Experiences</h1>
-      <Thumbnail
-        link="/twitter"
-        image="http://twitter-url.jpg"
-        title="Resume Objectives"
-        category="Mobile App"
-      />
-      <Thumbnail
-        link="/airbnb"
-        image="http://airbnb-url.jpg>"
-        title="Experiences"
-        category="Website"
-      />
-      <Thumbnail
-        link="/airbnb"
-        image="http://airbnb-url.jpg>"
-        title="Education and References"
-        category="Desktop"
+      <div className="experiences">
+        <h4>{props.about.name}</h4>
+        <h4>{props.about.address}</h4>
+        <h4>{props.about.phone}</h4>
+        <h4>{props.about.email}</h4>
+      </div>
+      <div className="test"></div>
+      <div className="experiences">{props.objectives}</div>
+      <img
+        src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536__340.jpg"
+        alt=""
+        style={{ height: "38vw", width: "auto" }}
       />
     </div>
   );
 }
 
-export default Experiences;
+const mapStateToProps = state => {
+  return {
+    objectives: state.objectives,
+    about: state.about
+  };
+};
+
+export default connect(mapStateToProps)(Experiences);

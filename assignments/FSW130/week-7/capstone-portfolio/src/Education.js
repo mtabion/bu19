@@ -1,10 +1,12 @@
 import React from "react";
-//import Thumbnail from "./Thumbnail/Thumbnail.js";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import "./App.css";
+import "./Education.css";
 
 function Education(props) {
   return (
+    // Render a Thumbnail component
     <div>
       <div className="navigation-sub">
         <Link to="/" className="item">
@@ -17,25 +19,28 @@ function Education(props) {
           Education
         </Link>
       </div>
-      <h1>Education and References</h1>
-      {props.education.map((item, i) => {
-        return (
-          <div key={i} className="education-entry">
-            <div className="school-name">{item.school}</div>
-            <div className="school-start">{item.startDate}</div>
-            <div className="school-end">{item.endDate}</div>
-            <div className="school-studied">{item.studied}</div>
-          </div>
-        );
-      })}
+      <h1>Education</h1>
+      <div className="education">
+        <h4>{props.about.name}</h4>
+        <h4>{props.about.address}</h4>
+        <h4>{props.about.phone}</h4>
+        <h4>{props.about.email}</h4>
+      </div>
+      <div className="test"></div>
+      <div className="objectives">{props.objectives}</div>
+      <img
+        src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png"
+        alt=""
+        style={{ height: "38vw", width: "auto" }}
+      />
     </div>
   );
 }
 
 const mapStateToProps = state => {
-  console.log(state);
   return {
-    education: state.education
+    objectives: state.objectives,
+    about: state.about
   };
 };
 
