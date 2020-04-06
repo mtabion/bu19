@@ -57,7 +57,7 @@ bountyRouter.get("/:bountyId", (req, res) => {
   res.send(foundBounty);
 });
 
-//get by genre
+//get by type
 bountyRouter.get("/search/type", (req, res) => {
   const type = req.query.type;
   const filteredBounties = bounties.filter(bounty => bounty.Type === type);
