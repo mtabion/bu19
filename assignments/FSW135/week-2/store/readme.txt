@@ -1,0 +1,1 @@
+ /usr/local/opt/mongodb-community/bin/mongod --config /usr/local/etc/mongod.conf

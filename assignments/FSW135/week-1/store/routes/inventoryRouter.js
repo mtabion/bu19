@@ -5,7 +5,7 @@ const morgan = require("morgan");
 const mongoose = require("mongoose");
 
 inventoryRouter.get("/", (req, res, next) => {
-  console.log("/ Get All");
+  // console.log("/ Get All");
   Inventory.find((err, inventories) => {
     if (err) {
       res.status(500);
