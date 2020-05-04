@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const morgan = require("morgan");
 const mongoose = require("mongoose");
+const expressJwt = require("express-jwt");
 require("dotenv").config();
 
 app.use(express.json());
@@ -25,12 +26,16 @@ mongoose.connect(
 );
 
 app.use("/comment", require("./routes/commentRouter.js"));
-app.use("/user", require("./routes/userRouter.js"));
+app.use("/api", expressJwt({ secret: process.env.SECRET }));
+app.use("/api/user", require("./routes/userRouter.js"));
 app.use("/issue", require("./routes/issueRouter.js"));
 app.use("/auth", require("./routes/authRouter.js"));
 
 app.use((err, req, res, next) => {
   console.log(err);
+  if (err.name === "unauthorizedError") {
+    res.status(err.status);
+  }
   return res.send({ errMsg: err.message });
 });
 
