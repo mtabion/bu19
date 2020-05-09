@@ -1,0 +1,63 @@
+-- set operations
+-- QUESTION: {show the titles of all the episodes in seasons 1 and 2}
+SELECT episode, title
+FROM episodes
+WHERE episode like 'S01%'
+UNION 
+SELECT episode, title
+FROM episodes
+WHERE episode like 'S02%';
+
+
+-- subqueries
+-- Question: {Which elements are used in more than 150 episodes?}
+SELECT element AS `elements that are used in more than 150 episodes`
+FROM elements 
+	WHERE (SELECT Count(*)
+			FROM episode_elements
+            WHERE episode_elements.elementId = elements.elementId
+            GROUP BY elementId) > 150;
+
+
+-- order of operation of queries
+-- Question: {Show the elements used most often in season 1 and display their counts. Only show he top 5 counts.
+ 
+SELECT episode, element, count(*) AS `count`
+FROM elements
+	JOIN episode_elements
+		USING(elementId)
+WHERE episode LIKE 'S01%'
+GROUP BY element
+HAVING count > 5
+ORDER BY `count` desc
+LIMIT 5;
+
+-- creating, altering, and dropping tables
+-- Question: create a new table and add a new column. Add a new column to the table after creating it. Delete table when done.
+
+CREATE TABLE testNewTable(testId INT NOT NULL);
+ALTER TABLE testNewTable
+ADD name varchar(50);
+DROP TABLE testNewTable;
+
+-- associations(This is similar to using the JOIN query)
+
+
+-- {joins and multiple table joins}
+-- QUESTION: what are the names of all of the elements?
+Query: 
+SELECT element AS `Elements used in S01E01`
+FROM episodes
+	JOIN episode_elements
+		USING(episode)
+	JOIN elements
+		USING(elementId)		
+WHERE episode = 'S01E01';
+
+-- JOIN {Singular}
+-- What episodes use boat elements?
+SELECT episode
+FROM elements
+	JOIN episode_elements
+		USING(elementId)
+WHERE element = 'boat';
