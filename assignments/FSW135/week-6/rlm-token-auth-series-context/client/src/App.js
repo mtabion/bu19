@@ -1,0 +1,33 @@
+import React, { useContext } from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
+import { UserContext } from "./context/UserProvider.js";
+import Auth from "./components/auth.js";
+import Profile from "./components/profile.js";
+import ProtectedRoute from "./components/protectedRoute.js";
+
+import "./App.css";
+
+export default function App() {
+  const { token, logout } = useContext(UserContext);
+  console.log(token);
+  return (
+    <div className="App">
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={() =>
+            token != false ? <Redirect to="/profile/" /> : <Auth />
+          }
+        />
+
+        <ProtectedRoute
+          path="/profile"
+          component={Profile}
+          redirectTo="/"
+          token={token}
+        />
+      </Switch>
+    </div>
+  );
+}

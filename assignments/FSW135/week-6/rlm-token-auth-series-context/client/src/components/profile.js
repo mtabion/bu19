@@ -1,0 +1,43 @@
+import React, { useState, useContext, useEffect } from "react";
+import { UserContext } from "../context/UserProvider.js";
+import "../App.css";
+
+export default function Profile() {
+  const {
+    user: { username },
+    token,
+    logout,
+    issues,
+    getMyIssues,
+  } = useContext(UserContext);
+
+  useEffect(() => {
+    getMyIssues(token);
+  }, []);
+
+  function callLogout() {
+    logout();
+  }
+
+  return (
+    <div className="profile-wrapper">
+      <button onClick={callLogout}>Logout</button>
+      <button onClick={callLogout}>Sign In</button>
+
+      <div className="user-wrapper">{username}</div>
+      <div className="issues-wrapper">
+        {issues.map((issue, i) => {
+          return (
+            <div key={i} className="issue-wrapper">
+              <div>{issue.createdOn}</div>
+              <div>{issue.content}</div>
+              <div>{issue.upvotes.length}</div>
+              <div>{issue.downvotes.length}</div>
+              <div>{issue.comments.length}</div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
