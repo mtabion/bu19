@@ -23,7 +23,7 @@ export default function UserProvider(props) {
   function getMyIssues(token) {
     console.log(userState);
     axios
-      .get(`/issue/${userState.user._id}`, token)
+      .get(`/issue/user/${userState.user._id}`, token)
       .then((res) => {
         const { issues } = res.data;
 
@@ -52,6 +52,7 @@ export default function UserProvider(props) {
   }
 
   function login(credentials) {
+    console.log(credentials);
     axios
       .post("/auth/login", credentials)
       .then((res) => {

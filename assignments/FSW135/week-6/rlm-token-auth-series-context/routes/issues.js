@@ -15,7 +15,7 @@ router.get("/", function (req, res, next) {
   });
 });
 
-router.get("/:userId", function (req, res, next) {
+router.get("/user/:userId", function (req, res, next) {
   Issue.find({ user: req.params.userId }, (err, issues) => {
     if (err) {
       res.status(500);
@@ -23,6 +23,17 @@ router.get("/:userId", function (req, res, next) {
     }
 
     res.json({ issues: issues });
+  });
+});
+
+router.get("/:issueId", (req, res, next) => {
+  Issue.find({ _id: req.params.issueId }, (err, issue) => {
+    if (err) {
+      res.status(500);
+      return res.send(err);
+    }
+
+    res.json(issue);
   });
 });
 

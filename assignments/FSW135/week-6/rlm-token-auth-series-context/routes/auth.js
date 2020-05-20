@@ -40,6 +40,7 @@ router.get("/login", (req, res, next) => {
 });
 
 router.post("/login", (req, res, next) => {
+  console.log(req.body);
   User.findOne({ username: req.body.username }, (err, user) => {
     if (err) {
       res.status(500);

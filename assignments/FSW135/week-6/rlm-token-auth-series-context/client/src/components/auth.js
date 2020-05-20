@@ -35,30 +35,6 @@ export default function Auth() {
 
   return (
     <div className="auth-container">
-      <nav>
-        <ul className="nav-container">
-          <li>
-            <a className="nav-text" href="default.asp">
-              Home
-            </a>
-          </li>
-          <li>
-            <a className="nav-text" href="news.asp">
-              News
-            </a>
-          </li>
-          <li>
-            <a className="nav-text" href="contact.asp">
-              Contact
-            </a>
-          </li>
-          <li>
-            <a className="nav-text" href="about.asp">
-              About
-            </a>
-          </li>
-        </ul>
-      </nav>
       <h1>Rock The Vote</h1>
       {!toggle ? (
         <div>

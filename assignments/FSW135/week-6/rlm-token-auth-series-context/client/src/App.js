@@ -4,6 +4,8 @@ import { UserContext } from "./context/UserProvider.js";
 import Auth from "./components/auth.js";
 import Profile from "./components/profile.js";
 import ProtectedRoute from "./components/protectedRoute.js";
+import Issue from "./components/issue.js";
+import NavBar from "./components/nav.js";
 
 import "./App.css";
 
@@ -12,20 +14,28 @@ export default function App() {
   console.log(token);
   return (
     <div className="App">
+      <NavBar />
       <Switch>
+        <ProtectedRoute
+          path="/profile"
+          component={Profile}
+          redirectTo="/"
+          token={token}
+        />
+
+        <ProtectedRoute
+          path="/issue/:id"
+          component={Issue}
+          redirectTo="/"
+          token={token}
+        />
+
         <Route
           exact
           path="/"
           render={() =>
             token != false ? <Redirect to="/profile/" /> : <Auth />
           }
-        />
-
-        <ProtectedRoute
-          path="/profile"
-          component={Profile}
-          redirectTo="/"
-          token={token}
         />
       </Switch>
     </div>
