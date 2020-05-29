@@ -52,12 +52,15 @@ users.post("/login", (req, res) => {
     },
   })
     .then((user) => {
+      //console.log(user);
       if (user) {
         if (bcrypt.compareSync(req.body.password, user.password)) {
-          let token = jwt.sign(user.dataValues, process.env.SECRET_KEY, {
-            expiresIn: 1440,
-          });
+          let token = jwt.sign(user.dataValues, process.env.SECRET_KEY);
           res.send(token);
+        } else {
+          //Password was incorrect
+          res.status(403);
+          res.send("Incorrect email or password");
         }
       } else {
         res.status(400).json({

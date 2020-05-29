@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { login } from "./UserFunctions";
+import { login } from "./Userfunctions";
 
 class Login extends Component {
   constructor() {
@@ -26,7 +26,7 @@ class Login extends Component {
     };
 
     login(user).then((res) => {
-      this.props.history.push(`/`);
+      this.props.history.push(`/profile`);
     });
   }
 

@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+
+.posts-wrapper {
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+  flex-flow: column;
+  justify-content: stretch;
+}
+
+.posts-wrapper > * {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.single-post-wrapper {
+  margin-bottom: 20px;
+}
+
+.new-post-wrapper {
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.new-post-wrapper .post-text-wrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.new-post-wrapper .post-text-wrapper textarea {
+  width: 600px;
+  height: 200px;
+}
+
+.new-post-wrapper .submit-button-wrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
